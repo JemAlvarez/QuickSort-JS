@@ -63,7 +63,8 @@ async function swap(arr, a, b) {
     arr[b] = temp;
     values = arr
     linesContainer.innerHTML = ''
-    renderLines(values)
+    renderLines(values, maxVal)
+    colorLines(a, b)
 }
 
 function sleep(ms) {

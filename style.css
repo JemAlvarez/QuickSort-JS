@@ -1,37 +1,36 @@
 * {
     margin: 0;
     outline: none;
-}
+} 
 
 body {
     background-color: #333;
-    height: 90vh;
-    overflow: hidden;
-}
+} 
 
 #wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-}
+    margin: 50px 0;
+} 
 
 .lines {
     display: flex;
     justify-content: space-between;
     height: 500px;
     width: 800px;
-}
+} 
 
 .line {
     height: 100%;
     position: relative;
     width: 100%;
-}
+} 
 
 .line__inner {
     background-color: rgb(68, 70, 184);
-    border: 1px solid white;
+    border: 0.1px solid white;
     position: absolute;
     bottom: 0;
     width: 99%;
@@ -41,6 +40,7 @@ body {
     widows: 100%;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .btn {
@@ -50,28 +50,30 @@ body {
     border-radius: 10px;
     margin: 0 10px;
     cursor: pointer;
-}
+} 
 
 .btn__sort:hover {
     background-color:rgba(68, 70, 184, 0.7);
-}
+} 
 
 .btn__sort {
     background-color: rgb(68, 70, 184);
-}
+} 
 
 .btn__new:hover {
     background-color:rgba(184, 68, 68, 0.7);
-}
+} 
 
 .btn__new {
     background-color: rgb(184, 68, 68);
-}
+} 
 
 .loader {
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
     width: 100%;
+    left: 0;
+    top: 0;
     height: 100%;
     z-index: 10;
     user-select: none;
@@ -82,4 +84,33 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+.switching {
+    background:red;
+}
+
+.completed {
+    background: green;
+}
+
+.num {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+h3 {
+    color: white;
+    padding: 50px 0 0 0;
+    text-align: center;
+}
+
+.num input {
+    border: none;
+    background-color: rgb(105, 105, 105);
+    padding: 5px 15px;
+    color: white;
+    text-align: center;
 }
